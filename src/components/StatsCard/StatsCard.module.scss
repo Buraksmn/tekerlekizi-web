@@ -1,0 +1,23 @@
+.statsCard {
+  background-color: #f54c1e;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.titles {
+  font-size: 58px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.values {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.statsCardContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}

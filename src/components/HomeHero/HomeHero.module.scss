@@ -1,0 +1,33 @@
+.homeHero {
+  width: 100%;
+  min-height: 660px;
+  background-image: url("/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 52px;
+  max-width: 50%;
+}
+
+.heroSubTitle {
+  color: #fff;
+  font-size: 36px;
+  max-width: 40%;
+}
+
+.price {
+  color: #f54c1e;
+}
+
+.buttons {
+  margin-top: 4rem;
+  display: flex;
+
+  gap: 1.5rem;
+}

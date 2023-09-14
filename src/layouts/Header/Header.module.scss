@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffff;
+}
+.headerContent {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  img {
+    cursor: pointer;
+  }
+
+  a {
+    &:hover {
+      color: #fc621c;
+    }
+  }
+}
+
+.menü {
+  align-self: center;
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+}

@@ -1,0 +1,17 @@
+@use "sass-variables";
+
+@mixin for-desktop-only {
+  @media screen and (min-width: sass-variables.$xl) {
+    @content;
+  }
+}
+
+@mixin for-mobile-only {
+  @media screen and (max-width: sass-variables.$xl) {
+    @content;
+  }
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+  background-color: rgba($color, $opacity) !important;
+}

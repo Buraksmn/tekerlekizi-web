@@ -1,0 +1,33 @@
+.reportHero {
+  width: 100%;
+  min-height: 340px;
+  background-image: url("/reportHero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 52px;
+  max-width: 50%;
+}
+
+.heroSubTitle {
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+}
+
+.price {
+  color: #f54c1e;
+}
+
+.buttons {
+  margin-top: 4rem;
+  display: flex;
+
+  gap: 1.5rem;
+}

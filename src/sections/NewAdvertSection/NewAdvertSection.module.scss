@@ -1,0 +1,42 @@
+.newAdvertSection {
+  height: 380px;
+  padding-top: 108px;
+  padding-bottom: 108px;
+
+  background-image: url("/images.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  line-height: 149.5%;
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 149.5%;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+}
+
+.reportButton {
+  height: 60px !important;
+
+  width: 150px !important;
+}
+
+.leftContent {
+  max-width: 40%;
+}

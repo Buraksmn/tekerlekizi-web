@@ -1,0 +1,19 @@
+@import "./fonts.scss";
+@import "./typography.scss";
+@import "./utils.scss";
+@import "./colors.scss";
+
+body {
+  background-color: #edefef;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Poppins", -apple-system, system-ui, BlinkMacSystemFont,
+    sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

@@ -1,0 +1,141 @@
+@use "./mixins";
+
+$sizes: (
+  "0": 0px,
+  "xs": 0.4rem,
+  "sm": 8px,
+  "md": 16px,
+  "lg": 24px,
+  "xl": 32px,
+  "2xl": 40px,
+  "3xl": 48px,
+  "4xl": 56px,
+);
+
+// -> Margins
+@each $name, $size in $sizes {
+  .mt-#{$name} {
+    margin-top: $size;
+  }
+  .mr-#{$name} {
+    margin-right: $size;
+  }
+  .mb-#{$name} {
+    margin-bottom: $size;
+  }
+  .ml-#{$name} {
+    margin-left: $size;
+  }
+  .mv-#{$name} {
+    margin-top: $size;
+    margin-bottom: $size;
+  }
+  .mh-#{$name} {
+    margin-left: $size;
+    margin-right: $size;
+  }
+
+  .m-#{$name} {
+    margin-left: $size;
+    margin-right: $size;
+    margin-top: $size;
+    margin-bottom: $size;
+  }
+}
+
+// -> Paddings
+@each $name, $size in $sizes {
+  .pt-#{$name} {
+    padding-top: $size;
+  }
+  .pr-#{$name} {
+    padding-right: $size;
+  }
+  .pb-#{$name} {
+    padding-bottom: $size;
+  }
+  .pl-#{$name} {
+    padding-left: $size;
+  }
+  .pv-#{$name} {
+    padding-top: $size;
+    padding-bottom: $size;
+  }
+  .ph-#{$name} {
+    padding-left: $size;
+    padding-right: $size;
+  }
+}
+
+// -> Flex Gap
+@each $name, $size in $sizes {
+  .gap-#{$name} {
+    gap: $size;
+  }
+}
+
+.bg-none {
+  background-color: transparent !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.only-mobile {
+  @include mixins.for-mobile-only {
+    display: block !important;
+  }
+  @include mixins.for-desktop-only {
+    display: none !important;
+  }
+}
+
+.only-desktop {
+  @include mixins.for-desktop-only {
+    display: block !important;
+  }
+  @include mixins.for-mobile-only {
+    display: none !important;
+  }
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-gray {
+  color: var(--dojo-color-gray-600);
+}
+
+.text-center {
+  text-align: center;
+}
+.f-row {
+  display: flex !important;
+  flex-direction: row !important;
+}
+.w-full {
+  width: 100% !important;
+}
