@@ -1,3 +1,5 @@
+@use "../../styles/mixins.scss";
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -8,11 +10,13 @@
   min-height: 100px;
   display: flex;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 
   img {
     cursor: pointer;
+    @include mixins.for-mobile-only {
+      width: 120px;
+      height: 30px;
+    }
   }
 
   a {
@@ -20,9 +24,15 @@
       color: #fc621c;
     }
   }
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @include mixins.for-mobile-only {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
-.menü {
+.menu {
   align-self: center;
   width: 100%;
   text-align: center;
@@ -31,6 +41,11 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+
+  @include mixins.for-mobile-only {
+    gap: 0.25rem;
+  }
+
   a {
     display: block;
     text-decoration: none;

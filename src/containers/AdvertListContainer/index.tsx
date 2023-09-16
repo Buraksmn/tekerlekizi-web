@@ -30,28 +30,28 @@ const AdvertListContainer: React.FC<AdvertListContainerProps> = ({
       </div>
       <div className={Styles.list}>
         <Row gutter={[16, 12]}>
-          <Col span={12} lg={6} md={6}>
+          <Col span={24} lg={6} md={6}>
             <AdvertCard />
           </Col>
-          <Col span={12} lg={6} md={6}>
+          <Col span={24} lg={6} md={6}>
             <AdvertCard />
           </Col>
-          <Col span={12} lg={6} md={6}>
+          <Col span={24} lg={6} md={6}>
             <AdvertCard />
           </Col>
-          <Col span={12} lg={6} md={6}>
+          <Col span={24} lg={6} md={6}>
             <AdvertCard />
           </Col>
-          <Col span={12} lg={6} md={6}>
+          <Col span={24} lg={6} md={6}>
             <AdvertCard />
           </Col>
-          <Col span={12} lg={6} md={6}>
+          <Col span={24} lg={6} md={6}>
             <AdvertCard />
           </Col>
-          <Col span={12} lg={6} md={6}>
+          <Col span={24} lg={6} md={6}>
             <AdvertCard />
           </Col>
-          <Col span={12} lg={6} md={6}>
+          <Col span={24} lg={6} md={6}>
             <AdvertCard />
           </Col>
         </Row>

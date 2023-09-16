@@ -1,8 +1,17 @@
+@use "../../styles/mixins.scss";
+
 .lastestList {
-  margin-top: 52px;
+  margin-top: 27px;
+
+  @include mixins.for-desktop-only {
+    margin-top: 52px;
+  }
 }
 .title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  @include mixins.for-desktop-only {
+    margin-bottom: 1rem;
+  }
 }
 .head {
   display: flex;

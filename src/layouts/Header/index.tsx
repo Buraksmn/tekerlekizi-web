@@ -23,20 +23,20 @@ const Header: React.FC<HeaderProps> = () => {
             justify={"center"}
             align={"middle"}
           >
-            <Col md={2} span={2}>
+            <Col md={24} span={24} lg={2}>
               <Link href={"/"} style={{ zIndex: "99" }}>
                 <Image height={20} alt="logo" src={"/logo.png"} width={200} />
               </Link>
             </Col>
 
-            <Col span={20} md={20}>
-              <div className={Styles.menü}>
+            <Col className="only-desktop" span={2} md={20}>
+              <div className={Styles.menu}>
                 <Link href={"/reports"}>İlanlar</Link>
                 <Link href={"/pricing"}>Ödüllendirme</Link>
                 {/* <a href="/about">Hakkımızda</a> */}
               </div>
             </Col>
-            <Col md={2} span={2}>
+            <Col className="only-desktop" md={2} span={2}>
               <div
                 style={{
                   display: "flex",

@@ -1,3 +1,5 @@
+@use "../../styles/mixins.scss";
+
 .eventBox {
   position: relative;
   cursor: pointer;
@@ -13,6 +15,7 @@
   align-items: flex-start;
 
   padding: 16px 13px 10px 24px;
+
   gap: 10px;
 
   border-radius: 12px;
