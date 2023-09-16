@@ -1,0 +1,71 @@
+[
+  {
+    "endpoint": "/stats",
+    "description": "Get total prize, total adverts counts, total found adverts count",
+    "responseEx": {
+      "data": {
+        "totalPrize": "12.219TL",
+        "totalAdverts": "120",
+        "totalFounds": "200"
+      }
+    }
+  },
+  {
+    "endpoint": "/check",
+    "description": "Check stolen vehicles",
+    "responseEx": {
+      "data": {
+        "to": "url"
+      }
+    },
+    "requestEx": {
+      "vın": "",
+      "plate": ""
+    }
+  },
+  {
+    "endpoint": "/add-new",
+    "description": "Check stolen vehicles",
+    "responseEx": {},
+    "requestEx": {
+      "make": "Yamaha",
+      "model": "R25",
+      "year": "2019",
+      "color": "Black & Red",
+      "stolenDate": "18.09.2000",
+      "province": "",
+      "county": "",
+      "assets": ["", "", "", ""],
+      "plate": "",
+      "vın": "",
+      "phone": "",
+      "email": "",
+      "prize": "",
+      "description": ""
+    }
+  },
+  {
+    "endpoint": "/lastAddets",
+    "description": "Recently added reports",
+    "responseEx": {
+      "data": [
+        {
+          "make": "Yamaha",
+          "model": "R25",
+          "year": "2019",
+          "color": "Black & Red",
+          "stolenDate": "18.09.2000",
+          "province": "",
+          "county": "",
+          "assets": ["", "", "", ""],
+          "plate": "",
+          "vın": "",
+          "phone": "",
+          "email": "",
+          "prize": "",
+          "description": ""
+        }
+      ]
+    }
+  }
+]

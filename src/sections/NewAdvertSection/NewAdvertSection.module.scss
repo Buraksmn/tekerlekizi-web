@@ -51,7 +51,7 @@
   @include mixins.for-desktop-only {
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
   }
 }
 
